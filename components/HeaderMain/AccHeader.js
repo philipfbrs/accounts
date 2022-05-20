@@ -13,8 +13,9 @@ export const AccHeader = (props) => {
   return (
     <div>
       <h1 className="text-3xl mb-2 text-center p-4 font-bold">Accounts</h1>
-      <div className=" flex flex-col w-full p-3 md:flex-col">
-        <div className="flex flex-row w-full">
+      <div className=" flex flex-col w-full p-3 md:flex-col items-center">
+        <div className="flex sm:flex-row sm:w-full md:full flex-col w-fit ">
+          <div className="flex flex-row">
           <input
             className="p-2"
             placeholder="Search by id"
@@ -27,7 +28,8 @@ export const AccHeader = (props) => {
           >
             <AiOutlineSearch size={25} />
           </div>
-          <div className="flex flex-col w-full p-2 items-end">
+          </div>
+          <div className="flex flex-col w-full md:p-2 sm:p-2 p-8 sm:items-end md:items-end items-center">
             <div
               className="flex flex-row w-auto border-2 cursor-pointer font-bold"
               onClick={() => showModal(true, "1")}
